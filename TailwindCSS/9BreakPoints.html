@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Breakpoints & Media Queries</title>
+  </head>
+
+  <body
+    class="bg-indigo-400 sm:bg-pink-800 md:bg-blue-800 lg:bg-green-800 xl:bg-yellow-800 2xl:bg-red-800 min-h-screen text-white p-6"
+  >
+    <!-- Header -->
+    <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center mb-8">
+      Hello Tailwind Responsive World
+    </h1>
+
+    <!-- Responsive Grid Section -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white text-black p-6 rounded-lg shadow-md">
+        <h2 class="text-lg font-semibold mb-2">Card One</h2>
+        <p>This card adapts based on screen size using Tailwind's grid utilities.</p>
+      </div>
+      <div class="bg-white text-black p-6 rounded-lg shadow-md">
+        <h2 class="text-lg font-semibold mb-2">Card Two</h2>
+        <p>Resize the browser to see how these cards reflow responsively.</p>
+      </div>
+      <div class="bg-white text-black p-6 rounded-lg shadow-md">
+        <h2 class="text-lg font-semibold mb-2">Card Three</h2>
+        <p>Tailwind makes responsive design simple and efficient.</p>
+      </div>
+    </div>
+
+    <!-- Responsive Image -->
+    <div class="my-8 flex justify-center">
+      <img
+        src="https://i.pinimg.com/736x/b4/b2/41/b4b241ef9825ddcae1c583c87de453d3.jpg"
+        alt="Placeholder"
+        class="rounded-lg shadow-lg w-full sm:w-3/4 md:w-2/3 lg:w-1/2"
+      />
+    </div>
+
+    <!-- Responsive Button Section -->
+    <div class="text-center space-x-4">
+      <button class="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 text-sm sm:text-base md:text-lg transition-all">
+        Click Me
+      </button>
+      <button class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 text-sm sm:text-base md:text-lg transition-all">
+        Or Me
+      </button>
+    </div>
+  </body>
+</html>

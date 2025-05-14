@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind Grid</title>
+  </head>
+
+  <body class="p-10 bg-gray-100 font-sans">
+    <h1 class="text-3xl font-bold text-gray-700 mb-8">🔳 Tailwind Grid Playground</h1>
+
+    <!-- 📐 Basic Grid with 3 Columns and 5 Rows -->
+    <h2 class="text-xl font-semibold mb-4">Grid: 3 Columns × 5 Rows</h2>
+    <div class="grid grid-cols-3 grid-rows-5 gap-4 mb-12">
+      <div class="p-10 bg-green-300 text-center rounded">01</div>
+      <div class="p-10 bg-green-300 text-center rounded">02</div>
+      <div class="p-10 bg-green-300 text-center rounded">03</div>
+      <div class="p-10 bg-green-300 text-center rounded">04</div>
+      <div class="p-10 bg-green-300 text-center rounded">05</div>
+      <div class="p-10 bg-green-300 text-center rounded">06</div>
+      <div class="p-10 bg-green-300 text-center rounded">07</div>
+      <div class="p-10 bg-green-300 text-center rounded">08</div>
+      <div class="p-10 bg-green-300 text-center rounded">09</div>
+      <div class="p-10 bg-green-300 text-center rounded">10</div>
+      <div class="p-10 bg-green-300 text-center rounded">11</div>
+      <div class="p-10 bg-green-300 text-center rounded">12</div>
+    </div>
+
+    <!-- 📏 Column & Row Span Example -->
+    <h2 class="text-xl font-semibold mb-4">Grid with Col/Row Spans</h2>
+    <div class="grid grid-cols-3 gap-4 mb-12">
+      <div class="bg-teal-300 col-span-2 row-span-2 p-10 text-center rounded">01</div>
+      <div class="p-10 bg-teal-300 text-center rounded">02</div>
+      <div class="p-10 bg-teal-300 text-center rounded">03</div>
+      <div class="p-10 bg-teal-300 text-center rounded">04</div>
+      <div class="p-10 bg-teal-300 text-center rounded">05</div>
+      <div class="p-10 bg-teal-300 text-center rounded">06</div>
+      <div class="p-10 bg-teal-300 col-span-3 text-center rounded">07</div>
+      <div class="p-10 bg-teal-300 text-center rounded">08</div>
+      <div class="p-10 bg-teal-300 col-span-2 text-center rounded">09</div>
+    </div>
+
+    <!-- 🖥 Responsive Grid Layout -->
+    <h2 class="text-xl font-semibold mb-4">Responsive Grid (1 to 4 Columns)</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+      <div class="p-10 bg-indigo-300 text-center rounded">A</div>
+      <div class="p-10 bg-indigo-300 text-center rounded">B</div>
+      <div class="p-10 bg-indigo-300 text-center rounded">C</div>
+      <div class="p-10 bg-indigo-300 text-center rounded">D</div>
+      <div class="p-10 bg-indigo-300 text-center rounded">E</div>
+      <div class="p-10 bg-indigo-300 text-center rounded">F</div>
+    </div>
+
+    <!-- 🧲 Grid Alignment Demo -->
+    <h2 class="text-xl font-semibold mb-4">Center Items in Grid</h2>
+    <div class="grid grid-cols-3 h-40 gap-4 place-items-center">
+      <div class="w-20 h-20 bg-pink-400 text-white flex items-center justify-center rounded">1</div>
+      <div class="w-20 h-20 bg-pink-400 text-white flex items-center justify-center rounded">2</div>
+      <div class="w-20 h-20 bg-pink-400 text-white flex items-center justify-center rounded">3</div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tailwind Flex</title>
+</head>
+
+<body class="bg-gray-100 font-sans text-gray-800">
+  <div class="max-w-7xl mx-auto p-6 space-y-12">
+    <!-- Flex Row -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">Flex (Row)</h2>
+      <ul class="flex flex-wrap gap-4">
+        <li class="bg-teal-200 p-5 rounded shadow hover:bg-teal-300">01</li>
+        <li class="bg-teal-200 p-5 rounded shadow hover:bg-teal-300">02</li>
+        <li class="bg-teal-200 p-5 rounded shadow hover:bg-teal-300">03</li>
+        <li class="bg-teal-200 p-5 rounded shadow hover:bg-teal-300">04</li>
+        <li class="bg-teal-200 p-5 rounded shadow hover:bg-teal-300">05</li>
+      </ul>
+    </section>
+
+    <!-- Flex Column -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">Flex Column</h2>
+      <ul class="flex flex-col gap-4">
+        <li class="bg-teal-200 p-5 rounded shadow">01</li>
+        <li class="bg-teal-200 p-5 rounded shadow">02</li>
+        <li class="bg-teal-200 p-5 rounded shadow">03</li>
+        <li class="bg-teal-200 p-5 rounded shadow">04</li>
+        <li class="bg-teal-200 p-5 rounded shadow">05</li>
+      </ul>
+    </section>
+
+    <!-- Justify Variants -->
+    <section class="bg-white p-6 rounded-lg shadow space-y-10">
+      <h2 class="text-2xl font-semibold">Justify Content</h2>
+
+      <div>
+        <h3 class="text-xl font-medium mb-2">Start</h3>
+        <ul class="flex justify-start gap-4">
+          <li class="bg-teal-200 p-5 rounded">01</li>
+          <li class="bg-teal-200 p-5 rounded">02</li>
+          <li class="bg-teal-200 p-5 rounded">03</li>
+          <li class="bg-teal-200 p-5 rounded">04</li>
+          <li class="bg-teal-200 p-5 rounded">05</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium mb-2">End</h3>
+        <ul class="flex justify-end gap-4">
+          <li class="bg-teal-200 p-5 rounded">01</li>
+          <li class="bg-teal-200 p-5 rounded">02</li>
+          <li class="bg-teal-200 p-5 rounded">03</li>
+          <li class="bg-teal-200 p-5 rounded">04</li>
+          <li class="bg-teal-200 p-5 rounded">05</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium mb-2">Center</h3>
+        <ul class="flex justify-center gap-4">
+          <li class="bg-teal-200 p-5 rounded">01</li>
+          <li class="bg-teal-200 p-5 rounded">02</li>
+          <li class="bg-teal-200 p-5 rounded">03</li>
+          <li class="bg-teal-200 p-5 rounded">04</li>
+          <li class="bg-teal-200 p-5 rounded">05</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium mb-2">Between</h3>
+        <ul class="flex justify-between gap-4">
+          <li class="bg-teal-200 p-5 rounded">01</li>
+          <li class="bg-teal-200 p-5 rounded">02</li>
+          <li class="bg-teal-200 p-5 rounded">03</li>
+          <li class="bg-teal-200 p-5 rounded">04</li>
+          <li class="bg-teal-200 p-5 rounded">05</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-medium mb-2">Around</h3>
+        <ul class="flex justify-around gap-4">
+          <li class="bg-teal-200 p-5 rounded">01</li>
+          <li class="bg-teal-200 p-5 rounded">02</li>
+          <li class="bg-teal-200 p-5 rounded">03</li>
+          <li class="bg-teal-200 p-5 rounded">04</li>
+          <li class="bg-teal-200 p-5 rounded">05</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Order -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">Flex Order</h2>
+      <ul class="flex gap-4">
+        <li class="bg-teal-200 p-5 rounded order-5">01</li>
+        <li class="bg-teal-200 p-5 rounded order-4">02</li>
+        <li class="bg-teal-200 p-5 rounded order-1">03</li>
+        <li class="bg-teal-200 p-5 rounded order-2">04</li>
+        <li class="bg-teal-200 p-5 rounded order-3">05</li>
+      </ul>
+    </section>
+
+    <!-- Flex Grow / Shrink -->
+    <section class="bg-white p-6 rounded-lg shadow overflow-auto">
+      <h2 class="text-2xl font-semibold mb-4">Flex Shrink / Grow</h2>
+      <div class="flex flex-wrap gap-4 min-w-full">
+        <div class="p-5 bg-teal-200 rounded flex-none w-64">flex-none</div>
+        <div class="p-5 bg-teal-200 rounded flex-initial w-64">flex-initial</div>
+        <div class="p-5 bg-teal-200 rounded flex-auto w-64">flex-auto</div>
+        <div class="p-5 bg-teal-200 rounded flex-1">flex-1</div>
+        <div class="p-5 bg-teal-200 rounded">05</div>
+        <div class="p-5 bg-teal-200 rounded">06</div>
+        <div class="p-5 bg-teal-200 rounded">07</div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
