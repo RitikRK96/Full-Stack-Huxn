@@ -100,3 +100,4 @@ let lastName = "Gupta";
 // 8. Trim
 // let tr = "         asdfas      ";
 // console.log(tr.trim());
+
