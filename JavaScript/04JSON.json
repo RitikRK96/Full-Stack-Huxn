@@ -1,0 +1,12 @@
+{
+    "name": "Ritik Kumar",
+    "age": 21,
+    "email": "ritikrk008@gmail.com",
+    "isSubscribed": true,
+    "hobbies": ["Reading", "Running", "Cooking"],
+    "address": {
+        "city": "Patna",
+        "state": "Bihar",
+        "country": "India"
+    }
+}
