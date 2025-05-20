@@ -115,7 +115,7 @@
 // const countPeople2 = ["Ritik", "Trampo", "Mouse"]
 
 // const res2 = countPeople2.some((People) => People.length === 6);
-// console.log(res2);                           
+// console.log(res2);
 
 // const numbers = [1,2,3,4,5,6,7]
 // const sum = numbers.reduce((p,c)=>{
@@ -123,4 +123,62 @@
 // })
 // console.log(sum);
 
-// Map: just like objects but you can use any data type in this
+// // Map: just like objects but you can use any data type in this
+
+// const map = new Map();
+// const keyOne = "Ritik";
+// const keyTwo = {};
+// const keyThree = function(){};
+
+// map.set(keyOne, "value of key one updated");
+// map.set(keyTwo, "value of key two is inserted");
+// map.set(keyThree, "value of key three");
+
+// console.log(keyOne);
+// console.log(keyTwo);
+// console.log(keyThree);
+
+// console.log(map.keys())
+// console.log(map.values());
+// console.log(map.size);
+// console.log(map.delete(keyTwo));
+// console.log(map.size);
+
+// // For ..of loop
+// for(let[key, value] of map){
+//     console.log(`${key} -- ${value}`);
+// }
+
+// const map1 = new Map();
+
+// map1.set("a", 1);
+// map1.set("c", 3);
+
+// console.log(map1.get("a"));
+// console.log(map1.size);
+// console.log(map1.delete("b"));
+// console.log(map1.size);
+// map1.set("b", 2);
+
+// for (let [key, value] of map1) {
+//     console.log(`${key} -- ${value}`);
+// }
+
+
+// // Set: it stores only unique values not duplicate values unlike arrays
+// const mySet = new Set()
+// mySet.add("apple")
+// mySet.add("banana")
+// mySet.add("orange")
+// mySet.add("pineApple")
+
+// console.log(mySet.has("apple"));
+// console.log(mySet);
+// mySet.delete("banana");
+// console.log(mySet);
+// console.log();
+
+// for(let i of mySet){
+//     console.log(i);
+// }
+
