@@ -1,4 +1,3 @@
-// ----------------------------------------------
 // Refactor this code to use Promises
 console.log("Start");
 
@@ -24,7 +23,6 @@ function getUserDataFromDB(name, callback) {
 // });
 
 // console.log("End");
-// ----------------------------------------------
 
 // Solution
 console.log("Start");

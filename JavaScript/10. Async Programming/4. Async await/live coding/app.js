@@ -1,4 +1,3 @@
-// -------------------------
 function fetchDataFromServer() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -19,7 +18,6 @@ async function getUserData() {
 
 getUserData();
 
-// -------------------------
 // Refactoring our previous example to use (Async/Await)
 // function fetchData() {
 //   return new Promise((resolve) => {

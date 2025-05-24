@@ -8,10 +8,10 @@
 //     return res.text();
 //   })
 //   .then((data) => console.log(data));
-// ---------------------------------------
+// // ---------------------------------------
 
-// ---------------------------------------
-// Removing Clutters
+// // ---------------------------------------
+// // Removing Clutters
 // fetch("text.txt")
 //   .then((res) => res.text())
 //   .then((data) => console.log(data))
@@ -70,16 +70,34 @@
 
 // ---------------------------------------
 // Using async/await (With Error Handling)
-const result = document.querySelector(".result");
+// const result = document.querySelector(".result");
 
-async function readData() {
-  try {
-    const response = await fetch("text.txt");
-    if (!response.ok) throw Error(response.statusText);
-    const data = await response.text();
-    result.textContent = data;
-  } catch (error) {
+// async function readData() {
+//   try {
+//     const response = await fetch("text.txt");
+//     if (!response.ok) throw Error(response.statusText);
+//     const data = await response.text();
+//     result.textContent = data;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
+// readData();
+console.log("hello");
+
+const result = document.querySelector('.result')
+
+async function readData() { 
+  try{
+    const response = await fetch('text.txt');
+    if(!response.ok) throw Error(response.statusText)
+    const data = await response.text()
+    result.textContent = data;  
+  }
+  catch(error){
     console.log(error);
+    
   }
 }
 

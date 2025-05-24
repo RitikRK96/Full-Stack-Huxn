@@ -1,6 +1,9 @@
 const btn = document.querySelector(".btn");
 btn.addEventListener("click", makeRequest);
 
+const btn2 = document.querySelector(".btn2")
+btn2.addEventListener("click", makeRequest2)
+
 // ---------------------------------------
 // function makeRequest() {
 //   fetch("https://jsonplaceholder.typicode.com/posts/1")
@@ -34,8 +37,8 @@ btn.addEventListener("click", makeRequest);
 // }
 // ---------------------------------------
 
-// ---------------------------------------
-// Rendering Multiple Data
+// // ---------------------------------------
+// // Rendering Multiple Data
 function makeRequest() {
   fetch("https://jsonplaceholder.typicode.com/posts")
     .then((res) => {
@@ -50,9 +53,26 @@ function makeRequest() {
             <div>Title: ${element.title} </div>
             <div>Body: ${element.body} </div> </br>
             <hr>
-        `;
-      });
+            `;
+          });
     })
     .catch((error) => console.log(error));
+  }
+  
+function makeRequest2(){
+  fetch("https://jsonplaceholder.typicode.com/posts").then((res)=>{
+    if(!res.ok) new Error(res.statusText);
+    return res.json()
+  }).then((data)=>{
+    let output = document.querySelector(".all-posts");
+    data.forEach((element)=>{
+      output.innerHTML += `
+            <div>ID: ${element.id} </div>
+            <div>Title: ${element.title} </div>
+            <div>Body: ${element.body} </div> </br>
+            <hr>
+        `
+    })
+  }).catch((error)=>{console.log(error);
+  })
 }
-// ---------------------------------------
