@@ -59,10 +59,7 @@ body {
   transform: scale(1.05);
 }
 
-.buttons .equal {
-  grid-column: span 2;
-}
-
+.buttons .equal,
 .buttons .zero {
   grid-column: span 2;
 }
