@@ -33,7 +33,7 @@
   }
   
   .navbar-items a:hover {
-    color: #007bff;
+    color: yellow;
     background-color: #818488;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;

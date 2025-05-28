@@ -1,4 +1,7 @@
 import Navbar from "./Components/Navbar";
+import "./App.css";
+import ProductInfo from "./Components/ProductInfo";
+import MapLoop from "./Components/MapLoop";
 
 const ValidPassword = () => <h1>Valid Password</h1>;
 const InvalidPassword = () => <h1>Invalid Password</h1>;
@@ -13,8 +16,8 @@ const Cart = () => {
         <>
           <h2>You have {items.length} items in your Cart</h2>
           <ul>
-            {items.map((item) => (
-              <li key={Math.random()}>{item}</li> // Ensure you return the list item
+            {items.map((item, index) => (
+              <li key={index}>{item}</li>
             ))}
           </ul>
         </>
@@ -26,17 +29,22 @@ const Cart = () => {
   );
 };
 
+// eslint-disable-next-line react/prop-types
 const Password = ({ isValid }) => {
   return isValid ? <ValidPassword /> : <InvalidPassword />;
 };
+
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <div style={{ marginTop: "90px", marginLeft: "20px" }}>
-        {/* <Password isValid={false} /> */}
+      <div style={{ marginTop: "100px", marginLeft: "120px" }}>
+        <Password isValid={true} />
         <Cart />
+        <ProductInfo />
+        <MapLoop />
+        <ProductInfo />
       </div>
     </div>
   );
