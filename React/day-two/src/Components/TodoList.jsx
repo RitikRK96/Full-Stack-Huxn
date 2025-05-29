@@ -20,8 +20,8 @@ const TodoList = () => {
     <>
       <div className="todolist-Container">
         <h1>Todo List</h1>
-        <form onSubmit={handleSubmit} onChange={handleChange}>
-          <input type="text" value={inputValue} placeholder="Add a new Todo " />
+        <form onSubmit={handleSubmit} >
+          <input type="text" value={inputValue} placeholder="Add a new Todo..." onChange={handleChange}/>
           <button type="submit" className="todolistButton">
             Add Todo List
           </button>

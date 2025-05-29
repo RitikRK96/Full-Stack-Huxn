@@ -13,6 +13,8 @@ const CopyInput = () => {
 
     navigator.clipboard.writeText(inputValue).then(() => {
       setCopied(true);
+      alert(`Copied text is: ${inputValue}`)
+      setInputValue("")
 
       setTimeout(() => {
         setCopied(false);

@@ -1,7 +1,7 @@
 import { createPortal } from 'react-dom';
 
 const PopupContent = ({ copied, inputValue }) => {
-  return createPortal( 
+  return createPortal(
     <div>
       {copied && (
         <div className="popup">
