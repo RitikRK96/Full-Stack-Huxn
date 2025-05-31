@@ -8,8 +8,7 @@ const Switcher = () => {
     document.body.style.backgroundColor = sw ? "black" : "white";
   }, [sw]);
 
-  // Define theme styles
-  const theme = {
+    const theme = {
     backgroundColor: sw ? "#333" : "white",
     color: sw ? "white" : "black",
     border: sw ? "2px solid white" : "2px solid #333",

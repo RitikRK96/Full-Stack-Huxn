@@ -10,12 +10,12 @@ function App() {
 
   return (
     <>
-      {/* <LearnUseEffect1/>
-      <LearnUseEffect2/>
-      <BasicEffect/>
-      <CounterEffect/>
-      <FetchDataEffect/> */}
-      <LearnUseState/>
+      {/* <LearnUseEffect1/> */}
+      {/* <LearnUseEffect2/> */}
+      {/* <BasicEffect/> */}
+      {/* <CounterEffect/> */}
+      <FetchDataEffect/> 
+       {/* <LearnUseState/> */}
     </>
   )
 }
