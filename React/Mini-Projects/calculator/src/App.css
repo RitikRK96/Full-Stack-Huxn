@@ -1,0 +1,153 @@
+/* Dark Theme Variables */
+:root {
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --accent: #bb86fc;
+  --accent-hover: #9a67cf;
+  --operator: #03dac6;
+  --operator-hover: #018786;
+  --clear: #cf6679;
+  --clear-hover: #b00020;
+  --equals: #4caf50;
+  --equals-hover: #2e7d32;
+  --button-bg: #2d2d2d;
+  --button-hover: #3d3d3d;
+  --display-bg: #1a1a1a;
+  --border: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background-color: var(--bg-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--text-primary);
+}
+
+.app {
+  width: 100%;
+  max-width: 360px;
+  padding: 20px;
+}
+
+/* Calculator Styles */
+.calculator {
+  background-color: var(--bg-secondary);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.display-container {
+  padding: 20px;
+  background-color: var(--display-bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.display {
+  width: 100%;
+  background: transparent;
+  border: none;
+  font-size: 2.5rem;
+  text-align: right;
+  color: var(--text-primary);
+  outline: none;
+  font-weight: 300;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background-color: var(--border);
+}
+
+button {
+  border: none;
+  padding: 22px 0;
+  font-size: 1.3rem;
+  cursor: pointer;
+  background-color: var(--button-bg);
+  color: var(--text-primary);
+  transition: all 0.15s ease;
+  font-weight: 400;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Number buttons */
+button {
+  background-color: var(--button-bg);
+}
+
+/* Operator buttons */
+.operator {
+  background-color: var(--operator);
+  color: #000;
+}
+
+.operator:hover {
+  background-color: var(--operator-hover);
+  color: #fff;
+}
+
+/* Clear button */
+.clear {
+  background-color: var(--clear);
+  color: #000;
+}
+
+.clear:hover {
+  background-color: var(--clear-hover);
+  color: #fff;
+}
+
+/* Equals button */
+.equals {
+  background-color: var(--equals);
+  color: #fff;
+}
+
+.equals:hover {
+  background-color: var(--equals-hover);
+}
+
+/* Span 2 columns */
+.span-2 {
+  grid-column: span 2;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .app {
+    padding: 10px;
+    max-width: 100%;
+  }
+  
+  button {
+    padding: 18px 0;
+    font-size: 1.2rem;
+  }
+  
+  .display {
+    font-size: 2rem;
+  }
+}
