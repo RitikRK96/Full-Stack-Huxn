@@ -74,6 +74,27 @@ import student from './routes/student.js'
 //    .put((req, res)=>{res.send("Put Student data via route")})
 //    .delete((req, res)=>{res.send("Delete Student data via route")});
 
-app.use('/student', student)
+// app.use('/student', student)
+
+// app.get("/student/delete/:id", (req, res)=>{
+//     // res.send("User deleted...");
+//     const {id} = req.params;
+//     res.send(`Iphone ${id} Pro Max`)
+// })
+
+// app.get("/product/:category/:id", (req, res)=>{
+//     const {category, id} = req.params;
+//     res.send(`Category: ${category} and Product ID: ${id}`)
+// })
+
+app.param("id", (req, res, next, id)=>{
+    console.log(`ID: ${id}`);
+    next()
+})
+
+app.get("/user/:id", (req, res)=>{
+    console.log("This is user Id path");
+    res.send("Response Ok")
+})
 
 app.listen(8000, () => console.log("Server is Up at (8000)"))
