@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>This is Home Page</h1>
+    <p>Welcome to my home page</p>
+    <!-- Displaying Variable -->
+    <%= name %> <br>
+    <%= age %> <br>
+    <%= email %> <br>
+    <%= 2+2 %> <br>
+    <!-- Conditional Statement -->
+     <% if(age>18){ %>
+        <p>You are an adult</p>
+     <% } %>
+     <% if(age<18){ %>
+        <p>You are a minor</p>
+     <% } %>
+     <% if(age==20){ %>
+        <p>You are 20 years old</p>
+     <% } %>
+
+     <!-- Loops -->
+      <% for(let i = 0; i<5; i++){%>
+        <h1> <%= i %> </h1>
+      <% } %>
+
+      <% const data = [18,21,39,14,5,16,72,81,91,10] %>
+      <% for(let d in data){ %>
+        <%= d %>
+      <% } %>
+      <br> <br>
+      <% var currentDate = new Date() %>
+      <%= currentDate %>
+</body>
+</html>
