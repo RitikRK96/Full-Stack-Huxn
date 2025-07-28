@@ -377,3 +377,7 @@
 // const greenFruits = filterArray<Fruit>(fruitArray, (fruit)=>fruit.color === "Green")
 // console.log(redFruits);
 // console.log(greenFruits);
+
+
+
+
