@@ -1,6 +1,7 @@
 import {URL} from "url";
 
 const myURL = new URL("https://www.URL_ADDRESS.org:8080/hello/world?query=string#hashed");
+const hii = URL.parse(myURL)
 console.log(myURL.hash);
 console.log(myURL.host);
 console.log(myURL.hostname);
